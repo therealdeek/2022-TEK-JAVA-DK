@@ -1,0 +1,56 @@
+.menu_container{
+    display: flex;
+    padding: 10px;
+    
+    font-family: cursive;
+    font-size: large;
+    font-weight: 300;
+    color: rgb(255, 54, 54);
+    border: solid 5px red;
+}
+
+.menu_item{
+    flex: 1;
+    border: solid 3px rgb(62, 42, 135);
+
+}
+
+.menu_item_a{
+    flex: 5;
+    border: solid 3px rgb(163, 163, 38);
+
+}
+.title_container{
+    border: solid 2px;
+    font-style: italic;
+}
+
+.flex-container{
+    width 40%;
+    height: 500px;
+    margin: 100px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: black;
+}
+.flex_item{
+    background-color: beige;
+    width: 200px;
+    height: 100px;
+    text-align: center;
+    font-size: 100px;
+}
+.flex_item_expanded{
+    background-color: bisque;
+    width: 500px;
+}
+.first-item{
+    order: 1;
+}
+.second-item{
+    order: 2;
+}
+.last-item{
+    order: -1;
+}
