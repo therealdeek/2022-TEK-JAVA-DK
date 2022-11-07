@@ -1,0 +1,20 @@
+.border-box {
+    border: 10px;
+    border-style: solid;
+    padding: 5px;
+    border-radius: 25px;
+    margin-top: 50px ;
+    margin-bottom: 50px ;
+    margin: 15px;
+    background-color: rgb(163, 77, 61);
+
+}
+
+.border-box>p {
+    color: red
+}
+
+h3:hover {
+    color: aqua;
+    cursor: pointer;
+}

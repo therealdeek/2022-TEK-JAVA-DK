@@ -1,0 +1,28 @@
+.border-box {
+    border: 10px;
+    border-style: solid;
+    padding: 5px;
+    border-radius: 25px;
+    margin-top: 50px !important;
+    margin-bottom: 50px !important;
+    margin: 15px;
+    background-color: green;
+}
+
+h1 {
+    color: red;
+    background-color: blue;
+}
+
+h3:hover {
+    background-color: rgb(119, 255, 0);
+    cursor: pointer;
+}
+
+p {
+    background-color: aquamarine;
+}
+
+.odd {
+    background-color: rgb(124, 78, 166);
+}
