@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+     <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"/>
+
+</head>
+
+<script>
+      var header= document.getElementById('header-title');
+      console.log(header);
+     </script>
+
+
+<script>
+    let student = {
+         firstName: "John",
+        lastName: "Doe",
+        age: 30,
+        class: {
+            name: "Java Developer",
+            time: "Every Day"
+  },
+
+  arr: ["cat", "dog", "bird", "rabbit", "horse"]
+
+};
+
+console.log(student);
+console.log(student.firstName);
+console.log(student.lastName);
+console.log(student.age);
+console.log(student.class);
+
+for(field in student){
+  console.log("**********" + field + " = " + student[field]);
+}
+
+var a = new Array(10);
+a[0]= 1
+a[1]= "hello"
+a[2]=1
+a.length = 5
+
+a.pop()
+
+console.log(a)
+console.log(a[a[2]])
+
+/* Exercise 1 - A Box*/
+
+/*var width= prompt("Please enter the width:");
+var height = prompt("Please enter the height:");
+
+let n = height; //row amount
+let star = ""; //empty string defined
+
+for(i=1; i<=n; i++){
+  for(j=1; j <=width; j++){
+    star = star + "*";
+  }
+  star = star + "\n";
+}
+console.log("Shape:")
+console.log(star); */
+
+/* Exercise 2 Checkerboard*/ 
+
+var width1= prompt("Please enter the width:");
+var height1 = prompt("Please enter the height:");
+
+let n1 = height1; //row amount
+let star1 = ""; //empty string defined
+
+for(i=1; i<=n; i++){
+  for(j=1; j <=width1; j++){
+    star = star + "* ";
+  }
+  star = star + "\n";
+}
+console.log("Shape:")
+console.log(star);
+
+
+
+
+
+/*var student = {firstName: "John", lastName: "Doe", age: 30, class: "Java developer"};
+student.score = "90%";
+console.log(student.score)
+console.log(student.class)
+console.log(student)*/
+
+/*==================================*/
+
+
+
+</script>
+
+<body class="margin:10px">
+
+    <h1>Objects practice </h1>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"></script>
+    
+</body>
+</html>
+
+
+
+
+
