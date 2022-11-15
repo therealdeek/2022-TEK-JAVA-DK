@@ -1,68 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>This is the title</title>
 </head>
+
 <style>
+    input {
+        margin-bottom:10px;
+    }
 
-input{
-    margin-bottom: 10px;
-}
-
-.err { background: #ffe6ee; border: 1px solid #b1395f; }
-.emsg { color: #c12020; font-weight: bold; }
-
+    .error-field {
+        border:2px solid red;
+        box-shadow: 0 0 10px #719ECE;
+        border-radius: 15px;
+    }
 </style>
-
-
-
-
 
 <body>
 
-    <h1>Form Example</h1>
+<h1>Form Example</h1>
 
-    <form onsubmit="mySubmitFunction(event)">
-    First Name <input type="text" required name="firstName" id="firstNameId">
+<form onsubmit="mySubmitFunction(event)">
+    First Name <input type="text" name="firstName" id="firstNameId">
     <br>
-    Last Name <input type="text" required name="lastName" id="lastNameId">
+    Last Name <input type="text" name="lastName" id="lastNameId">
     <br>
-    Phone # <input type="tel" type="pattern" placeholder="### ### ####" pattern="[\d]{3} [\d]{3} [\d]{4}" name="phone" id="phoneId">
+    Phone # <input type="text" name="phone" id="phoneId">
     <br><br>
-
-    <button type="button" onclick="document.getElementById('firstNameId').style.color = 'red'">Submit</button>
-
-       
+    <button>Submit</button>
 </form>
 
 <script>
-    
     function mySubmitFunction(e) {
         e.preventDefault();
         console.log("form submitted");
 
-        let fn = document.getElementById("firstNameId");
-        console.log(fn.value);
+        let firstName = document.getElementById("firstNameId");
+        let lastName = document.getElementById("lastNameId");
+        let phone = document.getElementById("phoneId");
 
-        let ln = document.getElementById("lastNameId");
-        console.log(ln.value);
+        if ( firstName.value == "" ) {
+            firstName.classList.add('error-field');
+        }
 
-        let pn = document.getElementById("phoneId");
-        console.log(pn.value);
+        if ( lastName.value == "" ) {
+            lastName.classList.add('error-field');
+        }
 
-        field = document.getElementById("firstNameId");
-        error = document.getElementById("firstNameId");
-        if (!field.checkValidity()) {
-        valid = false;
-        field.classList.add("err");
-        error.innerHTML = "Name must be text characters\r\n";
-        } else {
-        field.classList.remove("err");
-        error.innerHTML = "";
-    }
+       if ( ! phone.value.match(/[0-9]{3}[-\s\.]*[0-9]{3}\s*[0-9]{4}/gm) ) {
+            phone.classList.add('error-field');
+       }
 
     }
 </script>
