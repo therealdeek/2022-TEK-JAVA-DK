@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown menu using select tab</title>
+</head>
+<script>
+function mydropbox() {
+    var mylist = document.getElementById("myList");
+    document.getElementById("favourite").value = 
+    mylist.options[mylist.selectedIndex].text;
+}
+
+</script>
+<body>
+   
+<form>
+<b>Select your favourite location for vacation</b>
+<select id="myList" onchange ="mydropbox()">
+    <option> --- Choose Location --- </option>
+    <option> California </option>
+    <option> Texas </option>
+    <option> Florida </option>
+    <option> Illnois </option>
+
+</select>
+<p>Your selected location site is:
+    <input type = "text" id = "favourite" size = "20">
+</p>
+</form>
+</body>
+</html>

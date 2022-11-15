@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>In the browser tab</title>
+</head>
+<body>
+    
+    <style>
+        .list-item{
+            color: green;
+        }
+        .list-item.bg{
+            background-color: aquamarine;
+        }
+    </style>
+      
+    <h1 id="page-title" class="page-title-css">DOM exercises  </h1>
+
+  <ul name="unorderedList" custom-attr="customAttribute">
+        <li class="list-item" id="item1">Item 1</li>
+        <li id="useless">Nothing to see here</li>
+        <li class="list-item">Item 3</li>
+        <li class="list-item">Item 4</li>
+
+  </ul>
+
+  <!-- add a new node to the unorderedList -->
+  <!-- remove the node Item 2 -->
+  <!-- add a button to the form below -->
+  <!-- when the button is clicked, console.log the value of the email input box -->
+  <!-- make another css class for page-title with the background = red -->
+  <!-- add another button that when clicked will add or remove the page-title-css-->
+  <!-- if page-title-css is present then remove it -->
+  <!-- if page-title-css is not present, then add it -->
+
+  <form>
+    <input type="text" name ="email" id="emailId">
+
+    <button type="submit" form="email" value="Submit">Submit</button>
+
+  </form>
+
+     <script>
+        let unorderedList = document.getElementById("item1").parentElement;
+        console.log(unorderedList.getAttribute("name"));
+        console.log(unorderedList.getAttribute("custom-attr"));
+
+        console.log(document.title);
+        document.title ="This is what i'm typing now."
+        console.log(document.title);
+
+        let pageTitle = document.getElementById('page-title');
+        console.log(pageTitle);
+        console.log(pageTitle.innerHTML);
+        pageTitle.innerHTML = pageTitle.innerHTML + " added with JS ";
+
+        let items = document.getElementsByClassName('list-item');
+        for(i in items){
+            console.log(items[i].innerHTML);
+        }
+
+
+
+        document.getElementById("page-title").classList.add("list-item-bg");
+        pageTitle.classList.add("list-item-bg");
+
+        var ul = document.querySelector('ul');
+        var newElement = document.createElement('li');
+        ul.appendChild(newElement);
+        var anotherElement = document.createElement('li');
+        anotherElement.textContent = "node.insertBefore(): Insert a node into the parent element before a specified sibling mode";
+        ul.insertBefore(anotherElement, newElement);
+        var uselessElement = document.querySelector('#useless');
+        var aDifferentElement = document.createElement('li');
+        aDifferentElement.textContent="node.replaceChild(): Replace an existing node with a new node";
+        ul.replaceChild(aDifferentElement, uselessElement);
+
+
+       
+     </script>
+
+    
+</body>
+</html>

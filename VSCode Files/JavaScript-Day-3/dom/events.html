@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Events Examples</h1>
+
+    <ul id = "unordered-list">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li id="deleteMe">Item 4</li>
+        <li>Item 5</li>
+    </ul>
+
+    <button onclick="submit()">Submit</button>
+    <button id="event-handler">using Event Handler</button>
+
+
+    <script>
+        
+        function submit(){
+            let list = document.getElementById("unordered-list");
+            let element = document.createElement("li");
+            element.innerHTML = "newElement";
+            list.appendChild(element);
+        }
+
+         function eventHandler(){
+            let list = document.getElementById("unordered-list");
+            let element = document.createElement("li");
+            element.innerHTML = "newElement with event handler";
+            list.appendChild(element);
+        }
+
+        let eh = document.getElementById("event-handler");
+        eh.addEventListener('mouseenter', eventHandler);
+        //eh.removeEventListener('mouseenter', eventHandler);
+
+        let para = document.createElement("p");
+        para.innerHTML="This is a new paragraph";
+        document.body.appendChild(para);
+
+        var uselessElement = document.getElementById("deleteMe");
+        uselessElement.remove();
+
+
+    </script>
+
+    
+    
+    
+</body>
+</html>
