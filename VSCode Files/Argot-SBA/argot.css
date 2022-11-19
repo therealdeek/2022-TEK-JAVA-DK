@@ -1,1 +1,27 @@
-h1{color: rgb(169, 34, 34);}
+/* Centered text */
+.parent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(23, 67, 187);
+    
+    
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    
+}
+
+img{
+    opacity: .8;
+}
+
+.child{
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    color: coral;
+}
