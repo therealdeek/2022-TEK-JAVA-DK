@@ -1,6 +1,9 @@
 body{
-    background-color:rgba(21, 36, 36, 0.942)
-
+    background-color:rgba(21, 36, 36, 0.942);
+    font-family:Helvetica, Arial, sans-serif;
+    margin: 1px;
+    padding: 0%;
+    
 }
 
 .column{
@@ -15,3 +18,23 @@ body{
     display: table;
     clear: both;
 }
+
+.imgContainer img,
+.imageContainer img{
+    width: 100%;
+    height: auto;
+}
+    
+.imgButton{
+    text-align: center;
+}
+
+label{
+    display: block;
+    margin-bottom: 10px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    padding: 10%;
+
+}   
