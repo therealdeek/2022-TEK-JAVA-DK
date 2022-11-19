@@ -7,15 +7,13 @@
 
 }
 
-
 /* Centered text */
 .pageName {
     position: absolute;
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: rgb(23, 67, 187);
-        
+    color: rgb(31, 67, 195);      
 }
 
 img{
@@ -26,28 +24,28 @@ img{
     position: absolute;
     color: rgb(255, 255, 255);
     top: 150%;
-    left: 10%;
-        
+    left: 10%;     
 }
 
 .heading{
     font-size: 400px;
     text-align: center;
-    vertical-align: center;    
+    vertical-align: center;
+        
 }
 
 header{
     font-size: 35px;
     text-align: left;
+    color: white;
 }
 
 ul {
     font-size: 35px;
+    color: white;
 }
 
 li{
     margin: 0;
     padding: 0;
-    
-    
 }
