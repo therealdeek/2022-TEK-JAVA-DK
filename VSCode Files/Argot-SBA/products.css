@@ -1,8 +1,9 @@
 body{
-    background-color:rgba(21, 36, 36, 0.942);
-    font-family:Helvetica, Arial, sans-serif;
-    margin: 1px;
-    padding: 0%;
+    background-color: rgba(21, 36, 36, 0.942);
+        font-family: Helvetica, Arial, sans-serif;
+        margin: 0px;
+        padding: 10%;
+        
     
 }
 
@@ -38,3 +39,9 @@ label{
     padding: 10%;
 
 }   
+
+.imgButton, select{
+     margin: auto;
+     height: 100px;
+     
+}
