@@ -9,12 +9,13 @@
 
 
 /* Centered text */
-.parent {
+.pageName {
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: rgb(23, 67, 187);
+    
     
     
 }
@@ -23,18 +24,23 @@ img{
     opacity: .8;
 }
 
-.child{
+.quote{
     position: absolute;
-    top: 100%;
-    left: 50%;
-    color: rgb(194, 83, 43);
+    color: rgb(255, 255, 255);
+    top: 150%;
+    left: 10%;
+    
+    
+    
 }
 
 .heading{
     font-size: 400px;
     text-align: center;
-    vertical-align: center;
+    vertical-align: center;    
+}
 
-
-    
+.header{
+    font-size: 50px;
+    text-align: center;
 }
