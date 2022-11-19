@@ -15,9 +15,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     color: rgb(23, 67, 187);
-    
-    
-    
+        
 }
 
 img{
@@ -29,9 +27,7 @@ img{
     color: rgb(255, 255, 255);
     top: 150%;
     left: 10%;
-    
-    
-    
+        
 }
 
 .heading{
@@ -40,7 +36,18 @@ img{
     vertical-align: center;    
 }
 
-.header{
-    font-size: 50px;
-    text-align: center;
+header{
+    font-size: 35px;
+    text-align: left;
+}
+
+ul {
+    font-size: 35px;
+}
+
+li{
+    margin: 0;
+    padding: 0;
+    
+    
 }
