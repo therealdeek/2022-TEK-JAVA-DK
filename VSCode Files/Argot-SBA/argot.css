@@ -34,18 +34,29 @@ img{
         
 }
 
-header{
-    font-size: 35px;
+nav{
     text-align: left;
     color: white;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    display: inline;
 }
 
 ul {
     font-size: 35px;
     color: white;
+    padding-top: 10px;
+    padding: 15px;
+    
 }
 
 li{
     margin: 0;
     padding: 0;
+    display: inline;
+        padding: 110px;    
+}
+
+.nav-links{
+    
 }
