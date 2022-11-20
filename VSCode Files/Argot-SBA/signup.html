@@ -14,26 +14,24 @@
     <section>
         <h1 id="account"><strong>Account Setup</strong></h1>
 
-        <form>
-            <br \>
-            <!-- Setting up signup form -->
-
+        <form action="#">
+            
             <div class="container">
 
-            <label class="labels">First Name:  </label><input id="firstname " type="text " name="firstname " 
-                placeholder="Enter Your First Name " required /> <br \>
+            <label class="labels">First Name:  </label><input id="firstname " type="text " name="firstname " pattern="[a-zA-Z]" minlength="2" maxlength="20" 
+                placeholder="Enter Your First Name " required> <br \>
 
-            <label class="labels">Last Name:  </label><input id=" lastname " type="text " name="lastname " 
-                placeholder="Enter Your Last Name " required /><br \>
+            <label class="labels">Last Name:  </label><input id=" lastname " type="text " name="lastname " pattern="[a-zA-Z]" minlength="2" maxlength="20"
+                placeholder="Enter Your Last Name " required><br \>
 
             <label class="labels">Email:  </label><input id="email " type="text " name="email " 
-                placeholder="Enter Your Email " required /><br \>
+                placeholder="Enter Your Email " required><br \>
 
             <label class="labels">Password:  </label><input id="password " type="text " name="password "
-                placeholder="Enter Your Password " required /><br \>
+                placeholder="Enter Your Password " required><br \>
 
             <label class="labels">Confirm Password:  </label><input id="password " type="text " name="password " 
-                placeholder="Confirm Your Password " required /><br \>
+                placeholder="Confirm Your Password " required><br \>
 
             <label class="labels">Gender:<input type="radio"> Male <input type="radio"> Female <input type="radio"> Other </label><br \> 
             
@@ -47,6 +45,16 @@
 
         </form>
     </section>
+
+    <script>
+        var dateOfBirth = 1900;
+
+        if (dateOfBirth <= 1920){
+            console.log("How are you still ordering stuff?");
+        }else if(dateOfBirth >= 2004 || dateOfBirth <= 2022){
+            console.log("Where are your parents?");
+        }
+    </script>
     
     
 </body>
