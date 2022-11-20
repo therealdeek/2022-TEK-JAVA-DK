@@ -58,6 +58,17 @@
         console.log(newTextNode);
 </script>
 
+<!-- script to display to removal of the list in the console -->
+
+<script>
+    var li = document.getElementsByTagName("li");
+
+    var myArr = Array.prototype.slice.call(li, 1, 3);
+    for(i in myArr) {
+        console.log(myArr[i]);
+    }
+</script>
+
 
 
    
